@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1601422158 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-oct-2020\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+
+1601422170 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-oct-2020\persona.h
+
+1633038048 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-oct-2020\pila.c
+	"pila.h"
+
+1633032598 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-oct-2020\pila.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"lista.h"
+
+1633037159 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-oct-2020\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"lista.h"
+	"pila.h"
+
+1633036980 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-oct-2020\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1633036972 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-oct-2020\lista.c
+	"lista.h"
+

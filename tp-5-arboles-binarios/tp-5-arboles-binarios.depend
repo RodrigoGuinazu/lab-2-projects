@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1634858382 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-5-arboles-binarios\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"arboles.h"
+
+1634858132 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-5-arboles-binarios\arboles.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1634858552 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-5-arboles-binarios\arboles.c
+	"arboles.h"
+

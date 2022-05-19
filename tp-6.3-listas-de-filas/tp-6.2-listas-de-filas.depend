@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1636224912 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-listas-de-filas\filas.c
+	"filas.h"
+
+1636224943 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-listas-de-filas\filas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas-dobles.h"
+
+1636228155 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-listas-de-filas\listas-dobles.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1636224962 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-listas-de-filas\listas-dobles.c
+	"listas-dobles.h"
+
+1636229366 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-listas-de-filas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"lista-de-filas.h"
+	"filas.h"
+	"listas-dobles.h"
+
+1636228164 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-listas-de-filas\lista-de-filas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"filas.h"
+	"listas-dobles.h"
+
+1636229250 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-listas-de-filas\lista-de-filas.c
+	"lista-de-filas.h"
+

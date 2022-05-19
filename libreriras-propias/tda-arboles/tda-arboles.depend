@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1634150667 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tda-arboles\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"arboles.h"
+
+1634079174 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tda-arboles\arboles.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1634150735 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tda-arboles\arboles.c
+	"arboles.h"
+

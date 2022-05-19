@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1631052346 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\funciones-basicas-listas-punteros-dobles\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1632458008 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\libreria-listas-puntero-doble\listas-puntero-doble.c
+	"listas-puntero-doble.h"
+
+1632458209 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\libreria-listas-puntero-doble\listas-puntero-doble.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1632458216 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\libreria-listas-puntero-doble\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas-puntero-doble.h"
+

@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1635887334 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.1-listas-de-listas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas-de-listas.h"
+
+1635886840 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.1-listas-de-listas\listas-de-listas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1635887403 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.1-listas-de-listas\listas-de-listas.c
+	"listas-de-listas.h"
+

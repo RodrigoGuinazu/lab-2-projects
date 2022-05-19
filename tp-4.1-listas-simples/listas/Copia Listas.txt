@@ -1,0 +1,246 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+
+typedef struct{
+    char nombre[30];
+    int edad;
+}Persona;
+
+
+typedef struct nodo{
+   Persona dato;
+   struct nodo* siguiente; /// ver diferencia con o sin  poner el struct
+} nodo;
+
+
+nodo* inicLista();
+Persona cargarPersona();
+nodo* crearNodo(Persona dato);
+nodo* agregarAlppio(nodo*lista, nodo*nuevoNodo);
+
+void mostrarLista(nodo* lista);
+void mostrarStrucpersona(Persona pers);
+
+nodo* listaInsertarOrden(nodo* lista, nodo* nuevoNodo);
+nodo* listaBorrar(nodo* lista, int edad);
+nodo* listaAgregarFinal(nodo* lista, nodo* nuevoNodo);
+
+main()
+{
+    nodo*lista;
+    lista= inicLista();
+
+//    Persona personita;
+//    personita = cargarPersona();
+//    nodo*nuevoNodo;
+//    nuevoNodo = crearNodo(personita);
+//    lista = agregarAlppio(lista, nuevoNodo);
+
+    //MINIMIZADO
+//    Persona personita = cargarPersona();
+//    nodo*nuevoNodo = crearNodo(personita);
+
+    lista=cargarListaCompleta(lista);
+    mostrarLista(lista);    //muestra la lista completa
+
+        //INSERTAR
+//    printf("\nlista insertada\n");
+//    Persona personita;
+//    personita = cargarPersona();
+//    nodo*nuevoNodo;
+//    nuevoNodo = crearNodo(personita);
+
+//    lista=listaInsertarOrden(lista,nuevoNodo);
+//    mostrarLista(lista);
+
+    //ELIMINAR NODO
+     //edad
+//    printf("Ingrese edad a borrar\n");
+//    int edadBuscada;
+//    scanf("%i",&edadBuscada);
+//
+//    lista=listaBorrar(lista,edadBuscada);
+//    mostrarLista(lista);
+
+
+//    nodo* otroNodo = crearNodo(cargarPersona()); //octa is the best    //super minimizado
+
+    Persona person = cargarPersona();
+    nodo*otroNodo = crearNodo(person);
+
+    lista = listaAgregarFinal(lista, otroNodo);
+    mostrarLista(lista);
+
+    return 0;
+}
+/// -------------------------------------
+
+
+
+nodo* listaAgregarFinal(nodo* lista, nodo* nuevoNodo){
+
+    //si es el unico
+    if(lista==NULL){
+        lista=nuevoNodo;
+    }else{
+
+        nodo* aux=lista;    //hay que crear esto porque la lista es un puntero y no el nodo -> ? porque sin esto no anda
+
+        if(aux){
+            while(aux->siguiente != NULL){    //llego al final
+            aux=aux->siguiente;
+            }
+        }
+            //re-armo
+            aux->siguiente=nuevoNodo;
+    }
+    return lista;
+}
+
+
+//eliminar de la lista -
+nodo* listaBorrar(nodo* lista, int edad){
+
+    if(lista){   //si no esta vacia
+
+        if(lista->dato.edad==edad){ //es primero
+
+            nodo* aBorrar=lista;        //capturo dir mem del a borrar
+            lista=lista->siguiente;    //reemplazar lista primero
+            free(aBorrar);      //libera el espacio de memoria
+
+        }else{  //si no es primero
+
+            nodo* anterior =lista;                  //necesarios para este tipo de problemas
+            nodo* seguidora =lista->siguiente;
+
+            while(seguidora->dato.edad != edad){   //llego a valor buscado
+            anterior=seguidora;             //hasta que no encuentro el dato muevo la pareja
+            seguidora=seguidora->siguiente;
+        }
+            anterior->siguiente=seguidora->siguiente;       //bypass
+            free(seguidora);
+        }
+    }
+    return lista;
+}
+
+//insertar en orden
+nodo* listaInsertarOrden(nodo* lista, nodo* nuevoNodo){
+
+    nodo* aux=lista;
+
+    if(aux == NULL){   //es unico
+        aux=nuevoNodo;
+    }else {
+        if(aux->dato.edad > nuevoNodo->dato.edad){ //esta primero     //flechita solo para el puntero
+        nuevoNodo->siguiente = aux;//siguiente del primero apunte a el primero
+        aux = nuevoNodo; //lista apunta al nuevo
+
+        }else{      //esta en otro lado
+
+            //anterior y siguiente
+            nodo* ante=aux;
+            nodo* sig=aux->siguiente;
+
+            //while primer cheqeuio dif null
+            while(sig && sig->dato.edad <nuevoNodo->dato.edad ){
+                ante=sig;
+                sig=sig->siguiente;
+            }
+            //inserto nuevo nodo
+            nuevoNodo->siguiente=sig;
+            ante->siguiente=nuevoNodo;
+        }
+    }
+    return aux;
+}
+
+
+int cargarListaCompleta(nodo*lista){
+
+    char control='s';
+
+    Persona personita;
+    nodo*nuevoNodo;
+
+    while(control=='s'){
+
+    personita = cargarPersona();
+    nuevoNodo = crearNodo(personita);
+    lista = agregarAlppio(lista, nuevoNodo);
+
+    printf("ingresar otro?\n");
+    fflush(stdin);
+    control=getchar();
+
+    }
+
+    return lista;
+}
+
+void mostrarLista(nodo* lista){
+
+    nodo* seguidora=lista;  //seguridad para no perder puntero
+
+    while(seguidora != NULL){
+        mostrarStrucpersona(seguidora->dato);
+        seguidora=seguidora->siguiente;
+    }
+}
+
+void mostrarStrucpersona(Persona pers){
+    printf("\n");
+    puts(pers.nombre);
+//    printf("%s",pers.nombre);
+    printf("%i \n",pers.edad);
+    printf("\n");
+}
+
+
+nodo* inicLista(){
+    return NULL;
+}
+
+Persona cargarPersona()
+{
+    Persona aux;
+
+    printf("Ingrese el nombre\n");
+    fflush(stdin);
+    gets(aux.nombre);
+    printf("ingrese la edad\n");
+    scanf("%d", &aux.edad);
+
+    return aux;
+}
+
+
+nodo* crearNodo(Persona dato)
+{
+   nodo* aux = (nodo*) malloc(sizeof(nodo));
+
+   aux->dato=dato;
+   aux->siguiente=NULL;
+
+   return aux;
+}
+
+
+nodo* agregarAlppio(nodo*lista, nodo*nuevoNodo)
+{
+    if (lista==NULL)
+    {
+        lista=nuevoNodo;
+    }
+    else
+    {
+        nuevoNodo->siguiente = lista;
+        lista = nuevoNodo;
+    }
+  return lista;
+}
+
+

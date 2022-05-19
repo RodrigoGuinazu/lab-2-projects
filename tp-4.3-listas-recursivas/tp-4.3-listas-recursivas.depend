@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1631489507 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\listas-puntero-simple.c
+	"listas-puntero-simple.h"
+
+1632341631 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\listas-puntero-simple.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1632550595 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones-recursivas.h"
+	"listas-puntero-simple.h"
+
+1632550543 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\funciones-recursivas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas-puntero-simple.h"
+
+1632550579 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\funciones-recursivas.c
+	"funciones-recursivas.h"
+
+1632171113 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\listas-dobles.c
+	"listas-dobles.h"
+
+1632168662 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\listas-dobles.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1631403475 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\listas-4.1.c
+	"listas-4.1.h"
+
+1631403066 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.3-listas-recursivas\listas-4.1.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+

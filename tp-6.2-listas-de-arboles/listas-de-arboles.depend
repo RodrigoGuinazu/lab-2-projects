@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1636069273 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.2-listas-de-arboles\lda.c
+	"LDA.h"
+
+1636067305 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.2-listas-de-arboles\lda.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1636068706 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.2-listas-de-arboles\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"LDA.h"
+

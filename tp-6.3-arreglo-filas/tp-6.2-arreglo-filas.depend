@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1636137212 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-arreglo-filas\fila.c
+	"fila.h"
+
+1636089358 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-arreglo-filas\fila.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"lista-doble.h"
+
+1636136644 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-arreglo-filas\lista-doble.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1636137333 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-arreglo-filas\lista-doble.c
+	"lista-doble.h"
+
+1636141105 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-arreglo-filas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"arreglo-de-filas.h"
+	"fila.h"
+	"lista-doble.h"
+
+1636141203 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-arreglo-filas\arreglo-de-filas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"fila.h"
+
+1636141194 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.3-arreglo-filas\arreglo-de-filas.c
+	"arreglo-de-filas.h"
+

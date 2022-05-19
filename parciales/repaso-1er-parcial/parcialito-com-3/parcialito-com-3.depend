@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1632800207 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcialito-com-3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1632800160 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcialito-com-3\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1632801464 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcialito-com-3\funciones.c
+	"funciones.h"
+

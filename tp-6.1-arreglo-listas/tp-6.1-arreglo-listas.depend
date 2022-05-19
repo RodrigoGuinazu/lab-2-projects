@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1635752045 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.1-arreglo-listas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"arreglos-de-listas.h"
+
+1635752116 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.1-arreglo-listas\arreglos-de-listas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1635752270 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.1-arreglo-listas\arreglos-de-listas.c
+	"arreglos-de-listas.h"
+

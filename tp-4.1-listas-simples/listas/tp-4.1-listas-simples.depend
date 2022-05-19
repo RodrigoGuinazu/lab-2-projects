@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1631298898 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"tda-listas.h"
+	"pilas-con-listas.h"
+
+1631298827 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\pilas-con-listas.c
+	"pilas-con-listas.h"
+
+1631297603 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\pilas-con-listas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"tda-listas.h"
+
+1631298947 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\tda-listas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1631298779 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\tda-listas.c
+	"tda-listas.h"
+
+1632772332 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\listas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas-4.1.h"
+
+1632772440 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\listas\listas-4.1.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1632772436 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\listas\listas-4.1.c
+	"listas-4.1.h"
+

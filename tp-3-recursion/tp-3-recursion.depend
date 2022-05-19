@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1630814446 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-3-recursion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

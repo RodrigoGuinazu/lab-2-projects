@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int FactorialIterativo(int n);
+int factorialRecursivo (int x);
+int SumaArrayIterativa(int arr[], int val);
+int sumaArrayRecursiva(int arreglo[], int validos, int i);
+void mostrarArrayRecursivo(int arreglo[], int validos, int i);
+
+
+int main()
+{
+    int factorialIt=FactorialIterativo(5);
+    printf("factorial iterativo: %d \n", factorialIt);
+    int factorialRe=factorialRecursivo(5);
+    printf("factorial recursivo: %d ", factorialRe);
+
+    int arreglo[5] = {1,2,3,4,5};
+    int rta = SumaArrayIterativa(arreglo, 5);
+    printf("rta iterativa: %d \n", rta);
+    int rta2 = sumaArrayRecursiva(arreglo, 5,0);
+    printf("rta recursiva: %d \n", rta2);
+
+    mostrarArrayRecursivo(arreglo, 5, 0);
+
+}
+
+
+/// 4! = 4*3*2*1
+int FactorialIterativo(int n)
+{
+    int fact = 1;
+    int i;
+    for(i = 2; i <= n; i++)
+    {
+        fact = fact * i;
+    }
+    return fact;
+}
+
+
+int factorialRecursivo (int x)
+{
+    int rta;
+    if(x==0)
+    {
+        rta=1;
+    }
+    else
+    {
+        rta= x * factorialRecursivo(x-1);
+    }
+    return rta;
+}
+/// no x-- ni i++ !! uso x-1 o i+1
+/// no acumuladores!! uso la llamada recursiva
+/// no estructuras repeticion!! (se usan estructuras de selección)
+
+int SumaArrayIterativa(int arr[], int val)
+{
+    int i;
+    int suma=0;
+    for(i=0;i<val;i++)
+    {
+        suma = suma + arr[i];
+    }
+    return suma;
+}
+
+int sumaArrayRecursiva(int arreglo[], int validos, int i)///ojo! el i va fuera!!
+{
+    int suma=0;
+    if(i==validos)
+    {
+        suma = 0; ///ojo! ver en qué casos 0 o 1- suma 0, multiplic 1
+    }else{
+        suma = arreglo[i] + sumaArrayRecursiva(arreglo, validos, i+1);
+    }
+    return suma;
+}
+
+
+void mostrarArrayRecursivo(int arreglo[], int validos, int i) ///sol trivial implicita
+{
+    if(i<validos)
+    {
+       printf("%d", arreglo[i]);/// ojo! es diferente ponerlo arriba o abajo
+       mostrarArrayRecursivo(arreglo, validos, i+1);
+       ///printf("%d", arreglo[i]);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

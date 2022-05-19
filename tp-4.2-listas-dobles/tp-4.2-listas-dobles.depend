@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1631904418 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.2-listas-dobles\filas.c
+	"filas.h"
+
+1631904427 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.2-listas-dobles\filas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas-dobles.h"
+
+1632692727 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.2-listas-dobles\listas-dobles.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1632693029 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.2-listas-dobles\listas-dobles.c
+	"listas-dobles.h"
+
+1632692994 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.2-listas-dobles\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas-dobles.h"
+	"filas.h"
+

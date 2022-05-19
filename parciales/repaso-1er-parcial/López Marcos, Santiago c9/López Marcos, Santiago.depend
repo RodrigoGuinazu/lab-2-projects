@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1632865440 source:c:\users\santiago\desktop\prog y lab2\lópez marcos, santiago\lista.c
+	"lista.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"persona.h"
+
+1632868763 c:\users\santiago\desktop\prog y lab2\lópez marcos, santiago\lista.h
+	"persona.h"
+
+1632868763 c:\users\santiago\desktop\prog y lab2\lópez marcos, santiago\persona.h
+	"lista.h"
+
+1632865993 source:c:\users\santiago\desktop\prog y lab2\lópez marcos, santiago\main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+	<conio.h>
+	<string.h>
+	"lista.h"
+
+1632864938 source:c:\users\santiago\desktop\prog y lab2\lópez marcos, santiago\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+

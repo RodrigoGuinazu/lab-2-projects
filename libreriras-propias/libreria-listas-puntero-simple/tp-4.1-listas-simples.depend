@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1630887879 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1631126699 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\funciones-basicas-listas-simples\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1632455982 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\libreria-listas-puntero-simple\listas-puntero-simple.c
+	"listas-puntero-simple.h"
+
+1632456288 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\libreria-listas-puntero-simple\listas-puntero-simple.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1632456300 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\libreria-listas-puntero-simple\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas-puntero-simple.h"
+

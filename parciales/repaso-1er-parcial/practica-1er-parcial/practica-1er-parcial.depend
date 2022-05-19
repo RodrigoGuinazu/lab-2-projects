@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1632779149 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\practica-1er-parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"automoviles.h"
+
+1632778713 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\practica-1er-parcial\automoviles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1632779359 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\practica-1er-parcial\automoviles.c
+	"automoviles.h"
+

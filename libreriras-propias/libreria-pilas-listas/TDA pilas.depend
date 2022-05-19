@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1631489518 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\tda pilas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"listas-puntero-simple.h"
+	"pilas-puntero-doble.h"
+
+1631489027 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\tda pilas\listas-puntero-simple.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1631489507 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\tda pilas\listas-puntero-simple.c
+	"listas-puntero-simple.h"
+
+1631559435 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\tda pilas\pilas-puntero-doble.c
+	"pilas-puntero-doble.h"
+
+1631485399 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-4.1-listas-simples\tda pilas\pilas-puntero-doble.h
+	"listas-puntero-simple.h"
+
+1631489507 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\libreriras-propias\libreria-pilas-listas\listas-puntero-simple.c
+	"listas-puntero-simple.h"
+
+1632455280 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\libreriras-propias\libreria-pilas-listas\listas-puntero-simple.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+

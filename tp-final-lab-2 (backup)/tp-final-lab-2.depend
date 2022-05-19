@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1637273902 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\arboles.c
+	"arboles.h"
+
+1637273056 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\arboles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"listas.h"
+	"peliculas.h"
+	"colores.h"
+
+1636758492 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\peliculas.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"colores.h"
+
+1637032086 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\listas.c
+	"listas.h"
+
+1637006525 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\listas.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"peliculas.h"
+	"colores.h"
+
+1636776572 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\peliculas.c
+	"peliculas.h"
+
+1636833757 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\usuarios.c
+	"usuarios.h"
+
+1636833879 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\usuarios.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"colores.h"
+	"peliculas.h"
+	"arboles.h"
+	"listas.h"
+
+1637271938 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\ldl.c
+	"ldl.h"
+
+1637270983 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\ldl.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"usuarios.h"
+	"listas.h"
+	"colores.h"
+	"arboles.h"
+
+1637273126 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"usuarios.h"
+	"peliculas.h"
+	"arboles.h"
+	"listas.h"
+	"ldl.h"
+	"colores.h"
+
+1636204594 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\colores.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1636204356 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-final-lab-2\colores.c
+	"colores.h"
+

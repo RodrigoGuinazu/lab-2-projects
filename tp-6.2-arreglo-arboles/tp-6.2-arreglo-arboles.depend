@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1636066367 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.2-arreglo-arboles\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"arreglos-de-arboles.h"
+
+1636065555 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.2-arreglo-arboles\arreglos-de-arboles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1636065742 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\tp-6.2-arreglo-arboles\arreglos-de-arboles.c
+	"arreglos-de-arboles.h"
+

@@ -1,0 +1,412 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "pila.h"
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+///el mio
+
+int main()
+{
+    //1 - recursivo - factorial
+    int rta1=recursivoFactorial(5);
+    printf("Factorial Recursivo: %i \n",rta1);
+
+
+    //2 - recursivo - potencia
+    int rta2=recursivoPotencia(2,2);
+    printf("Potencia Recursivo: %i\n",rta2);
+
+
+    //3.1 - recursivo explicito - mostrar arreglo
+    int A[]={2,0,-1};
+    int validosA=3;
+    printf("MOSTRAR EXPLICITO\n");
+    recursivoArregloMostrarExplicito(A,validosA,0);
+
+
+    //3.2 - recursivo implicito - mostrar arreglo
+    printf("MOSTRAR IMPLICITO\n");
+    recursivoArregloMostrarImplicito(A,validosA,0);
+    printf("\n");
+
+    //4 - recursivo - mostrar invertido
+    printf("MOSTRAR INVERTIDO\n");
+    recursivoArregloMostrarInvertido(A,validosA,0);
+    printf("\n");
+
+    //5 - recursivo - arreglo capicua
+    int esCapicua=recursivoArregloCapicua(A,validosA,0,validosA-1);  //paso contadores desde la funcion porque son recursivas y no se pueden definir contadores dentro
+    if(esCapicua==0){
+        printf("No capicua\n");
+    }else{
+        printf("Es capicua\n");
+    }
+
+
+    //6 - recursivo - sumar arreglo
+    int suma=recursivoArregloSumar(A,validosA,0);
+    printf("SUMA= %i\n",suma);
+
+
+    //7 - recursivo - arreglo - buscar menor valor
+    int menorArreglo=recursivoArregloMenor(A,validosA,0,A[0]);
+    printf("MENOR= %i\n",menorArreglo);
+
+
+
+    //8.1
+    char fileName[]={"archivo.dat"};
+//    archivoCargar(fileName);
+    archivoMostrar(fileName);
+
+    //8 - recursivo - archivo - buscar menor valor principal
+//    int menorArchivo=recursivoArchivoMenor(fileName);
+//    printf("MENOR ARCHIVO: %i\n",menorArchivo);
+
+    //9 - recursivo - archivos - invertir principal
+//    invertirArchivoPpal(fileName);
+//    archivoMostrar(fileName);
+
+    //10 - recursivo - archivos - mostrar al reves
+//    printf("mostrado al reves\n");
+//    muestraArchivoInvertidoPpal(fileName);
+
+
+
+    //12 - existe elemento en arreglo
+    int rta=existeElementoEnArreglo(A,validosA,0,5);
+    if(rta==1){
+        printf("Existe\n");
+    }else{
+        printf("NO Existe\n");
+    }
+
+
+    printf("--------------------"); //esta linea es para ver como quedaria un posible printf luego
+    return 0;
+}
+/// -------------------------------------------------------------------------
+
+//12
+int existeElementoEnArreglo(int A[], int validos, int i, int valor)
+{
+    int rta=0; // supongo que el elemento no esta
+    if(i<validos)
+    {
+        if(A[i]==valor)
+        {
+            rta=1;
+        }
+        else
+        {
+            rta=existeElementoEnArreglo(A, validos, i+1, valor);
+        }
+    }
+    return rta;
+}
+
+
+
+
+//10 - recursivo - archivos - mostrar al reves
+void muestraArchivoInvertidoPpal(char nombre[])
+{
+    FILE *arch=fopen(nombre, "rb");
+
+    if(arch!=NULL){
+        printf("\n\nContenido del archivo invertido: ");
+        muestraArchivoInvertidoAux(arch);
+        fclose(arch);
+    }
+    else{
+        printf("Houston... tenemos un problema...");
+    }
+}
+
+void muestraArchivoInvertidoAux (FILE * arch)
+{
+    int valor;
+
+    if(fread(&valor, sizeof(int),1,arch) == 0 ) { // cond corte explicita: llegué al final del archivo
+            printf("\n"); // (solucion trivial)
+     }
+     else {
+            muestraArchivoInvertidoAux (arch);    // llamada recursiva
+            printf(" %d", valor);           // y muestro el elemento cuando vuelve de la recursion..
+     }
+
+    /* otra manera: no queda explicita la condicion de corte con su solucion final...
+    if(fread(&valor, sizeof(int),1,arch)>0)
+    {
+        muestraArchivoInvertidoAux (arch);
+        printf(" %d", valor);
+    } */
+}
+
+
+
+
+//9.2 contar registros del archivo
+int cuentaRegistroArchivo(FILE * arch){
+    int cant=0;
+    fseek(arch, 0, SEEK_END);
+    cant=ftell(arch)/sizeof(int);
+    return cant;
+}
+
+//9 - recursivo - archivos - invertir
+void invertirArchivoPpal(char nombreArchivo[]){
+    FILE * arch = fopen(nombreArchivo, "r+b");
+    if(arch){
+        int cantidad=cuentaRegistroArchivo(arch);
+        invertirArchivoAux(arch, cantidad, 0);
+        fclose(arch);
+     }
+
+}
+
+//9.1 - recursivo - archivos - invertir
+void invertirArchivoAux(FILE * FP,int cantidad,int i)
+{
+    int ppio,fin;
+
+    if(i<cantidad) // cond de corte implícita
+    {
+            fseek(FP,sizeof(int)*(cantidad-1),0);
+            fread(&fin,sizeof(int),1,FP);
+
+            fseek(FP,sizeof(int)*i,0);
+            fread(&ppio,sizeof(int),1,FP);
+
+            fseek(FP,sizeof(int)*i,0);
+            fwrite(&fin,sizeof(int),1,FP);
+
+            fseek(FP,sizeof(int)*(cantidad-1),0);
+            fwrite(&ppio,sizeof(int),1,FP);
+
+            invertirArchivoAux(FP, cantidad-1, i+1);
+    }
+}
+
+
+//8.1 - recursivo - archivo - buscar menor valor aux
+int recursivoArchivoMenorAux(FILE *arch){
+    int valor;
+    int menor;
+    if(fread(&valor,sizeof(int),1,arch)==0){    //llegue al final
+        fseek(arch,-1*sizeof(int),SEEK_END);     //vuelvo un lugar
+        fread(&menor,sizeof(int),1,arch);       //asigno el utimo valor a menor
+    }else{
+        menor = recursivoArchivoMenorAux(arch);     //porque se iguala a menor?
+        if(valor<menor){
+            menor = valor;
+        }
+    }
+    return menor;
+}
+
+
+//8 - recursivo - archivo - abrir y buscar menor principal
+int recursivoArchivoMenor(char nombreArchivo[]){
+     FILE * arch = fopen(nombreArchivo, "rb");
+     int rta;
+     if(arch){
+       rta=recursivoArchivoMenorAux(arch);  //le paso el puntero
+       fclose (arch);
+     }
+     return rta;
+}
+
+
+//hay que hacer una funcion para abrir y cerrar el archivo y otra para hacer cada cosa que piden
+//la funcion de abrir y cerrar cambia dependiendo lo que hace la funcion llamada dentro
+//8.3 template para abrir archivos en recursividad
+/*
+int archivoAbrir(char nombreArchivo[]){
+     FILE * arch = fopen(nombreArchivo, "rb");
+     int rta;//aca se declaran las variables
+     if(arch){
+       //rta=aca se llaman las funciones que hacen cosas en el archivo con parametro de arch(puntero)
+       fclose (arch);
+     }
+     return rta;
+}
+*/
+
+//8.2 mostrar el archivo por pantalla
+void archivoMostrar(char nombreArchivo[]){
+   FILE *arch = fopen(nombreArchivo,"rb");
+
+   if(arch){
+      int num;
+      printf("ARCHIVO:\n");
+      while(fread(&num,sizeof(int),1,arch) >0){
+          printf("%i ",num);
+      }
+      printf("\n");
+      fclose(arch);
+   }else{
+      printf("ERROR al abrir el archivo\n");
+   }
+}
+
+
+//8.1 cargar el archivo a mano con enteros
+void archivoCargar(char nombreArchivo[]){
+   FILE *arch = fopen(nombreArchivo,"ab");
+
+    char control='s';
+if(arch){
+      while (control!='n')
+        {
+            printf("archivo num? \n");
+            int num;
+            scanf("%d",&num);
+            fwrite(&num,sizeof(int),1,arch);
+            printf("\nSeguir cargando? (s/n)\n");
+            fflush(stdin);
+            scanf("%c",&control);
+        }
+      fclose(arch);
+      }else{
+         printf("ERROR al abrir el archivo\n");
+      }
+}
+
+
+//7.1
+int recursivoArregloMenorExplicito(int arr[], int validos, int i)
+{
+    int menor;
+    if (i==validos-1)   //llego al final
+    {
+        menor=arr[i];   //digo que el menor es el ultimo
+    }
+    else
+    {
+       menor= recursivoArregloMenorExplicito(arr, validos, i+1);    //mientras no llegue al final, vuelvo a llamar la funcion con el acercamiento
+       //todo lo que este por debajo de la llamada ocurre en el camino de vuelta
+       if(menor>arr[i])     //voy comparando
+            menor=arr[i];
+    }
+ return menor;
+}
+
+
+
+//7 - recursivo - arreglo - buscar menor valor implicita
+int recursivoArregloMenor(int A[], int validos, int i, int menor){//las variables que queres mantener a lo largo de las mutiples llamadas las declaras en los parametros formales
+    if(i<validos){      //mientras no llegue al final del arreglo
+            if(A[i]<menor){     //comparo en cada llamada de ida
+            menor=A[i];
+            }
+            menor=recursivoArregloMenor(A,validos,i+1,menor);   //recordar hacer la asignacion a rta
+    }
+    return menor;
+}
+
+
+
+//6.1 - recursivo - sumar arreglo implicita
+int recursivoArregloSumarImplicito(int A[],int validos,int i){
+    int rta=0;
+    if(i<validos){
+        rta=A[i]+recursivoArregloSumar(A,validos,i+1);
+    }
+    return rta;
+}
+
+
+//6 - recursivo - sumar arreglo explicita
+int recursivoArregloSumar(int A[],int validos,int i){
+    int rta=0;
+    if(i==validos){
+        rta=0;
+    }else{
+        rta=A[i]+recursivoArregloSumar(A,validos,i+1);
+    }
+    return rta;
+}
+
+
+
+//5 - recursivo - arreglo capicua explicito
+int recursivoArregloCapicua(int A[],int validos,int i,int j){
+    int rta=1;               //esto es la respuesta default si se cumple lo que buscas
+    if(i<validos/2){        //condicion de busqueda en capicua
+        if(A[i]==A[j]){     //condicion de capicua
+            rta=recursivoArregloCapicua(A,validos-1,i+1,j-1);   //asigno el 1 como rta si hay capicua
+        }else{
+            rta=0;  //esta es la respuesta por si no se cumple      //no tiene sentido hacer printf para decirte si es o no capicua
+        }
+    }
+    return rta;
+}
+
+
+//4 - recursivo - mostrar invertido
+void recursivoArregloMostrarInvertido(int A[], int validos, int i){
+    if(i>=validos){
+//        printf("\n");       //se imprime antes
+    }else{
+        recursivoArregloMostrarInvertido(A,validos,i+1);
+        printf("%i  ",A[i]);    //como el printf esta despues de la llamada recursiva lo imprime de vuelta
+//        printf("\n");     //te lo imprime en modo columna
+    }
+}
+
+
+//3.2 - recursivo implicito - mostrar arreglo
+void recursivoArregloMostrarImplicito(int A[], int validos, int i){
+    if(i<validos){
+        printf("%i  ",A[i]);
+        recursivoArregloMostrarImplicito(A,validos,i+1);
+    }
+//    printf("fin"); //no se puede poner el \n aca porque se imprime en cada vuelta, hacerlo en main
+}
+
+
+//3.1 - recursivo explicito - mostrar arreglo
+void recursivoArregloMostrarExplicito(int A[], int validos, int i){
+    if(i>=validos){
+        printf("\n");
+    }else{
+        printf("%i  ",A[i]);
+        recursivoArregloMostrarExplicito(A,validos,i+1);
+    }
+}
+
+
+//2 - recursivo - potencia
+int recursivoPotencia(int base, int exp){
+    int rta;
+    if(exp==0){
+        rta=1;
+    }else{
+        rta=base*recursivoPotencia(base,exp-1);
+    }
+    return rta;
+}
+
+
+//1 - recursivo - factorial
+int recursivoFactorial(int num){
+
+    int rta;
+    if(num==0){     //cond de corte
+        rta=1;      //solucion trivial (factorial(0)=1)
+    }else{
+//        printf("NUM:%i\n",num);
+        rta=num*recursivoFactorial(num-1);  //llamada recursiva + acercamiento (num-1)
+    }
+    return rta;
+}
+/*
+Implicito -> no tiene if-else solo if
+
+Explicito -> tiene if-else
+*/
+

@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1601665662 source:c:\users\tomas\desktop\cursada on-line\progra ii\guia 3 - listas dobles\examen - aldinio tomas\pilaestudiante.c
+	"PilaEstudiante.h"
+
+1601663542 c:\users\tomas\desktop\cursada on-line\progra ii\guia 3 - listas dobles\examen - aldinio tomas\pilaestudiante.h
+	<stdio.h>
+	<stdlib.h>
+	"ListaEstudiante.h"
+
+1601665733 source:c:\users\tomas\desktop\cursada on-line\progra ii\guia 3 - listas dobles\examen - aldinio tomas\listaestudiante.c
+	"ListaEstudiante.h"
+
+1601663648 c:\users\tomas\desktop\cursada on-line\progra ii\guia 3 - listas dobles\examen - aldinio tomas\listaestudiante.h
+	<stdio.h>
+	<stdlib.h>
+
+1602010744 source:c:\users\tomas\desktop\cursada on-line\progra ii\guia 3 - listas dobles\examen - aldinio tomas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ListaEstudiante.h"
+	"PilaEstudiante.h"
+
+1602010795 source:c:\users\usuario\desktop\progra 2 de tomi\guia 3 - listas dobles\examen - aldinio tomas\listaestudiante.c
+	"ListaEstudiante.h"
+
+1601663648 c:\users\usuario\desktop\progra 2 de tomi\guia 3 - listas dobles\examen - aldinio tomas\listaestudiante.h
+	<stdio.h>
+	<stdlib.h>
+
+1602010744 source:c:\users\usuario\desktop\progra 2 de tomi\guia 3 - listas dobles\examen - aldinio tomas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ListaEstudiante.h"
+	"PilaEstudiante.h"
+
+1601663542 c:\users\usuario\desktop\progra 2 de tomi\guia 3 - listas dobles\examen - aldinio tomas\pilaestudiante.h
+	<stdio.h>
+	<stdlib.h>
+	"ListaEstudiante.h"
+
+1601665662 source:c:\users\usuario\desktop\progra 2 de tomi\guia 3 - listas dobles\examen - aldinio tomas\pilaestudiante.c
+	"PilaEstudiante.h"
+
+1602010795 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\examen - aldinio tomas (oct-2020) - saco 9\listaestudiante.c
+	"ListaEstudiante.h"
+
+1601663648 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\examen - aldinio tomas (oct-2020) - saco 9\listaestudiante.h
+	<stdio.h>
+	<stdlib.h>
+
+1602010744 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\examen - aldinio tomas (oct-2020) - saco 9\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ListaEstudiante.h"
+	"PilaEstudiante.h"
+
+1601663542 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\examen - aldinio tomas (oct-2020) - saco 9\pilaestudiante.h
+	<stdio.h>
+	<stdlib.h>
+	"ListaEstudiante.h"
+
+1601665662 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\examen - aldinio tomas (oct-2020) - saco 9\pilaestudiante.c
+	"PilaEstudiante.h"
+

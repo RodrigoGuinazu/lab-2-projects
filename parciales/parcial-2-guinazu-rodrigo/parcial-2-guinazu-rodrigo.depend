@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1636740129 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\parcial-2-guinazu-rodrigo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+

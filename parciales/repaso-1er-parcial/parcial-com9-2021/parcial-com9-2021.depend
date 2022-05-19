@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1633055525 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-com9-2021\lista.c
+	"lista.h"
+
+1633055240 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-com9-2021\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1633055204 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-com9-2021\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"lista.h"
+

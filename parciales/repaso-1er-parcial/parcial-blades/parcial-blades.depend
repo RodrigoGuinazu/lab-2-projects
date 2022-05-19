@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1601673058 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-blades\fila.c
+	"fila.h"
+
+1601673062 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-blades\fila.h
+	<stdlib.h>
+	"blade.h"
+
+1633067042 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-blades\blade.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1633067076 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-blades\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"blade.h"
+	"fila.h"
+
+1633067097 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\repaso-1er-parcial\parcial-blades\blade.c
+	"blade.h"
+

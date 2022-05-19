@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1633110175 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\parcial1-lab2-guinazu-rodrigo\listas.c
+	"listas.h"
+
+1633110006 c:\users\rodri\documents\facultad\tsp\2021\programacion ii\parcial1-lab2-guinazu-rodrigo\listas.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1633109505 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\parcial1-lab2-guinazu-rodrigo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"listas.h"
+
